@@ -10,6 +10,7 @@ const (
 	frenchHelloPrefix  = "Bonjour, "
 )
 
+// Hello prints greeting in different languages
 func Hello(name string, language string) string {
 	if name == "" {
 		name = "World"
@@ -19,6 +20,7 @@ func Hello(name string, language string) string {
 
 }
 
+// greetingPrefix returns the greeting prefix by language
 func greetingPrefix(language string) (prefix string) {
 	switch language {
 	case spanish:
